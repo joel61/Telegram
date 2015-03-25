@@ -285,7 +285,7 @@ METHODDEF(void) my_error_exit(j_common_ptr cinfo) {
     longjmp(myerr->setjmp_buffer, 1);
 }
 
-JNIEXPORT void Java_org_telegram_messenger_Utilities_blurBitmap(JNIEnv *env, jclass class, jobject bitmap, int radius) {
+JNIEXPORT void Java_com_smaps_messenger_Utilities_blurBitmap(JNIEnv *env, jclass class, jobject bitmap, int radius) {
     if (!bitmap) {
         return;
     }
@@ -312,7 +312,7 @@ JNIEXPORT void Java_org_telegram_messenger_Utilities_blurBitmap(JNIEnv *env, jcl
     AndroidBitmap_unlockPixels(env, bitmap);
 }
 
-JNIEXPORT void Java_org_telegram_messenger_Utilities_loadBitmap(JNIEnv *env, jclass class, jstring path, jobject bitmap, int scale, int width, int height, int stride) {
+JNIEXPORT void Java_com_smaps_messenger_Utilities_loadBitmap(JNIEnv *env, jclass class, jstring path, jobject bitmap, int scale, int width, int height, int stride) {
     
     AndroidBitmapInfo info;
     int i;
@@ -397,7 +397,7 @@ JNIEXPORT void Java_org_telegram_messenger_Utilities_loadBitmap(JNIEnv *env, jcl
     }
 }
 
-JNIEXPORT jobject Java_org_telegram_messenger_Utilities_loadWebpImage(JNIEnv *env, jclass class, jobject buffer, int len, jobject options) {
+JNIEXPORT jobject Java_com_smaps_messenger_Utilities_loadWebpImage(JNIEnv *env, jclass class, jobject buffer, int len, jobject options) {
     if (!buffer) {
         (*env)->ThrowNew(env, jclass_NullPointerException, "Input buffer can not be null");
         return 0;
