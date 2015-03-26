@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="background_tab_pressed">#6633B5E5</color>
-    <color name="divider">#dcdcdc</color>
-    <color name="header">#ff54759e</color>
+    <color name="header">#2196F3</color>
+    <color name="primary">#2196F3</color>
+    <color name="primaryDark">#1976D2</color>
+    <color name="primryLigt">#BBDEFB</color>
+    <color name="accent">#FF4081</color>
+    <color name="divider">#B6B6B6</color>
 </resources>

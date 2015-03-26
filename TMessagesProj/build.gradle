@@ -44,14 +44,14 @@ android {
 
     buildTypes {
         debug {
-            debuggable true
-            jniDebuggable true
+            debuggable false
+            jniDebuggable false
             signingConfig signingConfigs.debug
         }
 
         release {
-            debuggable false
-            jniDebuggable false
+            debuggable true
+            jniDebuggable true
             signingConfig signingConfigs.release
         }
 
@@ -82,7 +82,7 @@ android {
     defaultConfig {
         minSdkVersion 8
         targetSdkVersion 21
-        versionCode 423
-        versionName "2.4.0"
+        versionCode 424
+        versionName "2.5.0"
     }
 }
